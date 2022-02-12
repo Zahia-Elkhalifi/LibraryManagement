@@ -1,8 +1,8 @@
 # Library-Management-System
-Library Management Application<br/>
-Desktop application of library management<br/>
-Authors:KRhajar, Zahia-Elkhalifi, Jabri Latifa,asmae-ghammouri.
-Tools: JavaFx, MySQL<br/>
+Library Management Application.<br/>
+Desktop application of library management.<br/>
+Authors:KRhajar, Zahia-Elkhalifi, Jabri Latifa,asmae-ghammouri.<br/>
+Tools: JavaFx, MySQL.<br/>
 To run this properly use xamppserver or another server.
 
 -----------------------------------------------
