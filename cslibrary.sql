@@ -85,9 +85,7 @@ INSERT INTO `clients` (`clientId`, `clientFirstName`, `clientLastName`, `clientA
 (6, 'Asmae', 'Ghammouri', 'andalous', 656698852),
 (7, 'Zahia', 'Elkhalifi', 'hoceima', 356898965),
 (8, 'Hajar', 'Kerroumi', 'arfoud', 65656532),
-(9, 'Latifa', 'Jabri', 'oujda', 556546453),
-(10, 'Nada', 'Hajjij', 'oujda', 6545646),
-(11, 'Zainab', 'Rahmani', 'oujda', 54654546);
+(9, 'Latifa', 'Jabri', 'oujda', 556546453);
 
 -- --------------------------------------------------------
 
@@ -106,9 +104,7 @@ CREATE TABLE `purchasedbooks` (
 -- Déchargement des données de la table `purchasedbooks`
 --
 
-INSERT INTO `purchasedbooks` (`clientId`, `bookId`, `quantity`, `price`) VALUES
-(7, 24, 2, 20),
-(8, 24, 2, 20);
+
 
 --
 -- Index pour les tables déchargées
