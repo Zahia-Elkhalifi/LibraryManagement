@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #78CEEB;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.adminslist.AdminsListController">
+   <children>
+      <Pane prefHeight="582.0" prefWidth="900.0">
+         <children>
+            <ImageView fitHeight="136.0" fitWidth="144.0" layoutX="1.0" layoutY="-14.0">
+               <image>
+                  <Image url="@../images/AAAAA1.png" />
+               </image>
+            </ImageView>
+            <TableView fx:id="adminsTable" layoutX="182.0" layoutY="122.0" onMouseClicked="#getSelected" prefHeight="370.0" prefWidth="586.0">
+              <columns>
+                <TableColumn fx:id="adminId" prefWidth="117.0" text="ID" />
+                <TableColumn fx:id="adminUserName" prefWidth="230.0" text="Username" />
+                  <TableColumn fx:id="adminPassword" prefWidth="237.0" text="Password" />
+              </columns>
+            </TableView>
+            <ButtonBar layoutX="-106.0" layoutY="505.0" prefHeight="40.0" prefWidth="377.0">
+              <buttons>
+                  <JFXButton buttonType="RAISED" onAction="#Edit" prefHeight="37.0" prefWidth="85.0" style="-fx-background-color: rgb(16,129,171);" text="Modify" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font></JFXButton>
+              </buttons>
+            </ButtonBar>
+            <JFXButton buttonType="RAISED" layoutX="693.0" layoutY="506.0" onAction="#goHome" prefHeight="31.0" prefWidth="75.0" style="-fx-background-color: rgb(16,129,171);" text="Exit" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="466.0" layoutY="47.0" text="Admin" textFill="#1081ab">
+               <font>
+                  <Font name="SansSerif Bold" size="40.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="58.0" fitWidth="61.0" layoutX="398.0" layoutY="42.0">
+               <image>
+                  <Image url="@../images/admin.png" />
+               </image>
+            </ImageView>
+            <JFXTextField fx:id="textAdminUserName" blendMode="ADD" layoutX="26.0" layoutY="221.0" />
+            <JFXTextField fx:id="textAdminPassword" blendMode="ADD" layoutX="26.0" layoutY="260.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
