@@ -14,3 +14,4 @@ To run this properly use xamppserver or another server.
 5. Add new data base name: cslibrary 
 6. Import cslibrary.sql into the database
 7. Log in using:  login keyword: admin /password: 123
+........
